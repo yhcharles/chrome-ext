@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "豆瓣电影评分",
+  "description": "获取豆瓣电影评分",
+  "version": "1.0",
+
+  "content_scripts": [{
+      "matches": ["http://www.zimuzu.tv/eresourcelist*"],
+      "js": ["jquery-2.2.0.min.js", "content_script.js"]
+  }],
+
+  "permissions": [
+    "https://api.douban.com/*",
+    "activeTab"
+  ]
+}
