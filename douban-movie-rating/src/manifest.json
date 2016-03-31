@@ -6,12 +6,13 @@
   "version": "1.0",
 
   "content_scripts": [{
-      "matches": ["http://www.zimuzu.tv/eresourcelist*"],
+      "matches": ["http://www.zimuzu.tv/eresourcelist*", "http://www.xiamp4.com/", "http://www.mp4ba.com/*"],
       "js": ["jquery-2.2.0.min.js", "content_script.js"]
   }],
 
   "permissions": [
     "https://api.douban.com/*",
+    "tabs",
     "activeTab"
   ]
 }
